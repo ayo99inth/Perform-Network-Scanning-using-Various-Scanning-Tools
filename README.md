@@ -106,10 +106,8 @@ TOR (The Onion Router): Can help tunnel traffic through encrypted layers to avoi
 
    **Usage Example**:
    ```bash
-   flood -t example.com -u 10000
+   hping3 --flood -p 80 example.com
    ```
-
-   **Explanation**: This command sends a UDP flood to `example.com` with 10,000 packets per second, simulating a network-based Denial of Service (DoS) attack.
 
    **Educational Tip**: Flood is valuable for assessing the resilience of networks and devices under high traffic conditions, helping identify performance bottlenecks or potential DoS vulnerabilities.
 
