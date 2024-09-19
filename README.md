@@ -82,16 +82,22 @@ Here’s a breakdown of each tool for educational purposes only, covering both u
 ---
 
 ### 7. **Firewallevade**
-   **Description**: Firewallevade is a tool used to test firewall evasion techniques by generating traffic designed to bypass common firewall rules.
+   **Description**: Firewallevading is a way of manipulating tools that can be used to test firewall evasion techniques by generating traffic designed to bypass common firewall rules.
 
-   **Usage Example**:
-   ```bash
-   firewallevade -target example.com -p 80
-   ```
+Some tools and methods commonly used for firewall evasion include:
 
-   **Explanation**: This command sends traffic to `example.com` on port 80, attempting to evade firewall detection by manipulating packet characteristics.
+Nmap: It has specific flags for firewall evasion, such as:
 
-   **Educational Tip**: Firewall evasion tools are essential for testing the robustness of firewall rules, ensuring that malicious traffic can’t slip through unnoticed. However, it’s important to use them responsibly during penetration testing.
+-f for sending fragmented packets.
+--scan-delay to slow down scanning to evade detection.
+-D for decoy scanning to obfuscate the origin of the scan.
+hping3: Can be used to craft custom packets that evade simple firewall rules.
+
+Metasploit Framework: Contains several modules designed to bypass firewalls, like encoding payloads or altering packet behaviors.
+
+Proxychains: Can be used to chain multiple proxies, potentially evading firewall rules by masking the real origin of the traffic.
+
+TOR (The Onion Router): Can help tunnel traffic through encrypted layers to avoid detection and firewall policies.
 
 ---
 
